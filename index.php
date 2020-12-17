@@ -1,3 +1,3 @@
 <?php
-include_once("./src/app/tela-inicial")
+include_once("./src/index.html")
 ?>
