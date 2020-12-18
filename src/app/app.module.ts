@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -47,4 +47,15 @@ const routes: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(public router:Router) { }
+
+ 
+
+  async rotaPrincipal(){
+    this.router.navigate([ '/telaprincipalC']);
+  }
+  async rotaDescricao(){
+    this.router.navigate([ '/descricaoC']);
+  }
+}
