@@ -64,24 +64,27 @@
    background: #000000;
    background: linear-gradient(to top, #474945, #474945);
  }</style>
+
+<script >
+   import { RouterModule, Router } from '@angular/router';
+   router:Router;
+
+  rotaPrincipal()
+     this.router.navigate(['/telaprincipalC']);
+   
+ rotaDescricao()
+     this.router.navigate(['/descricaoC']);
+   
+   </script>
+   
     </head>
     <body>
 
     <div  class="tela"></div>
 
        <!--Botão-->
-       <button value="Cadastrar" type="submit" class="button1" (click) = "rotaPrincipal()">Imagens</button>
-       <button value="Cadastrar" type="submit" class="button2" (click) = "rotaDescricao()">Sobre nós</button>
-       <script >
-         import { RouterModule, Router } from '@angular/router';
-       router:Router
-
-        rotaPrincipal()
-           this.router.navigate([ '/telaprincipalC']);
-         
-       rotaDescricao()
-           this.router.navigate([ '/descricaoC']);
-         
-         </script>
+       <button value="Cadastrar" type="submit" href="RAD.html"class="button1" (click) = "rotaPrincipal()">Imagens</button>
+       <button value="Cadastrar" type="submit" class="button2"  (click) = "rotaDescricao()">Sobre nós</button>
+       
     </body>
  </html>
