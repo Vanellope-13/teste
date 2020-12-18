@@ -11,9 +11,9 @@ export class AppComponent {
 
  
    rotaPrincipal(){
-    this.router.navigate([ 'telaprincipalC']);
+    this.router.navigate([ '/telaprincipalC']);
   }
   rotaDescricao(){
-    this.router.navigate([ 'descricaoC']);
+    this.router.navigate([ '/descricaoC']);
   }
 }
