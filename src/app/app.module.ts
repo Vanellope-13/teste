@@ -53,9 +53,9 @@ export class AppModule {
  
 
   async rotaPrincipal(){
-    this.router.navigate([ '/telaprincipalC']);
+    this.router.navigate([ 'telaprincipalC']);
   }
   async rotaDescricao(){
-    this.router.navigate([ '/descricaoC']);
+    this.router.navigate([ 'descricaoC']);
   }
 }
