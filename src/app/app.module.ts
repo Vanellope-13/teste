@@ -13,7 +13,7 @@ import { TerceiroAnoComponent } from './terceiro-ano/terceiro-ano.component';
 import { QuartoAnoComponent } from './quarto-ano/quarto-ano.component';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 
-const routes: Routes = [
+const routes: Router = [
   {path : 'sobreNosC', component : SobreNosComponent},
   {path : 'quartoanoC', component : QuartoAnoComponent},
   {path : 'terceiroanoC', component : TerceiroAnoComponent},
@@ -48,14 +48,5 @@ const routes: Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule { 
-  constructor(public router:Router) { }
 
- 
-
-  async rotaPrincipal(){
-    this.router.navigate([ 'telaprincipalC']);
-  }
-  async rotaDescricao(){
-    this.router.navigate([ 'descricaoC']);
-  }
 }
