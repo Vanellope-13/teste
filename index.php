@@ -1,3 +1,3 @@
 <?php
-include_once('src/app/papp.component.html')
+include_once('src/app/app.component.html')
 ?>
