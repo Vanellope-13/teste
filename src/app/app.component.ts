@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule, Router } from '@angular/router';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,11 +10,10 @@ export class AppComponent {
   constructor(public router:Router) { }
 
  
-
-  async rotaPrincipal(){
+   rotaPrincipal(){
     this.router.navigate([ 'telaprincipalC']);
   }
-  async rotaDescricao(){
+  rotaDescricao(){
     this.router.navigate([ 'descricaoC']);
   }
 }
